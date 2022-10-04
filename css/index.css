@@ -7,6 +7,16 @@
   padding: 0;
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 nav {
   position: relative;
   top: 0;
@@ -18,7 +28,15 @@ nav header {
   background-image: url("https://static.showit.co/800/gIyMRX_8QdGp9lHhZ2wHgA/63707/2c5a2462.jpg");
   background-size: cover;
   background-position: center;
-  background-blend-mode: darken;
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+nav header .shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 8, 8, 0.672);
 }
 nav header .text {
   text-transform: uppercase;
@@ -28,6 +46,7 @@ nav header .text {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   color: rgb(255, 255, 255);
+  z-index: 10;
 }
 nav header .text h1,
 nav header .text .crimson {
@@ -41,6 +60,31 @@ nav header .text p {
   font-family: "Quicksand", sans-serif;
   font-size: 12px;
   line-height: 25px;
+}
+nav header .text .img-arrow {
+  width: 10%;
+  height: 20%;
+  position: absolute;
+  bottom: -32%;
+  left: 45%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-image: url(https://static.showit.co/200/WM12hp_PTC-rutbYD30diQ/63707/white_arrow_2.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-transform: rotate(133deg);
+          transform: rotate(133deg);
+}
+nav header .manuscript {
+  position: absolute;
+  bottom: 8%;
+  right: 11%;
+  -webkit-transform: rotate(351deg);
+  transform: rotate(351deg);
+  font-family: "Dawning of a New Day", cursive;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 25px;
+  line-height: 0.5;
 }
 nav .menu-top-left {
   position: fixed;
@@ -102,10 +146,75 @@ nav .menu-top-left .bottom-menu .second {
 }
 
 main {
-  width: 100%;
-  height: 1000px;
-  background-color: red;
+  width: 100vw;
+  height: 120vh;
+  background-color: rgb(241, 229, 213);
+}
+main .founder {
+  height: 90%;
+  position: relative;
 }
 main .founder .card {
-  background-image: url("https://static.showit.co/1200/jgyYcmS4R7SAVIYx-rMakg/63707/arch_template_for_ad_site.png");
+  width: 90%;
+  height: 100%;
+  background-color: white;
+  margin: 10% auto;
+  padding: 10px;
+}
+main .founder .card .frame {
+  width: 95%;
+  height: 90%;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+main .founder .card .frame .image {
+  width: 100%;
+}
+main .founder .card .frame .image img {
+  width: 100%;
+}
+main .founder .card .frame .pallette-color {
+  position: absolute;
+  top: 17%;
+  right: -1%;
+  width: 62%;
+  height: 29%;
+  -webkit-transform: rotate(18deg);
+  transform: rotate(18deg);
+}
+main .founder .card .frame .pallette-color img {
+  width: 100%;
+  height: 100%;
+}
+main .founder .card .frame .small-button {
+  position: absolute;
+  width: 4%;
+  height: 4%;
+  top: 19%;
+  right: 21%;
+}
+main .founder .card .frame .small-button img {
+  width: 100%;
+  height: 100%;
+}
+main .founder .card .frame .text {
+  text-align: center;
+  position: absolute;
+  padding: 0 21px;
+}
+main .founder .card .frame .text .title h2 {
+  font-family: "Allura", cursive;
+  font-size: 30px;
+}
+main .founder .card .frame .text .title .name {
+  font-family: "Crimson Pro", serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+main .founder .card .frame .text .title p {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(57, 51, 46);
+  line-height: 1.5;
 }/*# sourceMappingURL=index.css.map */
