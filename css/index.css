@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: relative;
+  top: 0;
+  width: 100vw;
+}
+nav header {
+  width: 100vw;
+  height: 70vh;
+  background-image: url("https://static.showit.co/800/gIyMRX_8QdGp9lHhZ2wHgA/63707/2c5a2462.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+}
+nav header .text {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  top: 58%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+}
+nav header .text h1,
+nav header .text .crimson {
+  font-family: "Crimson Pro", serif;
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+nav header .text p {
+  padding: 0 40px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  line-height: 25px;
+}
+nav .menu-top-left {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 1.5%;
+  background-color: white;
+  width: 68px;
+  height: 70px;
+}
+nav .menu-top-left .upper-menu {
+  height: 100%;
+  width: 100%;
+}
+nav .menu-top-left .upper-menu .img {
+  position: absolute;
+  width: 40%;
+  left: 50%;
+  top: 10%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+nav .menu-top-left .upper-menu .img img {
+  width: 100%;
+}
+nav .menu-top-left .upper-menu p {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  font-family: "Allura", cursive;
+}
+nav .menu-top-left .bottom-menu {
+  width: 100%;
+  height: 40%;
+  position: relative;
+  overflow: hidden;
+}
+nav .menu-top-left .bottom-menu .first {
+  position: absolute;
+  bottom: 15px;
+  left: 1%;
+  width: 46%;
+  height: 120%;
+  background-color: white;
+  -webkit-transform: rotate(136deg);
+          transform: rotate(136deg);
+}
+nav .menu-top-left .bottom-menu .second {
+  right: 2%;
+  position: absolute;
+  bottom: 15px;
+  width: 46%;
+  height: 120%;
+  background-color: white;
+  -webkit-transform: rotate(136deg);
+          transform: rotate(136deg);
+}
+
+main {
+  width: 100%;
+  height: 1000px;
+  background-color: red;
+}
+main .founder .card {
+  background-image: url("https://static.showit.co/1200/jgyYcmS4R7SAVIYx-rMakg/63707/arch_template_for_ad_site.png");
+}/*# sourceMappingURL=index.css.map */
