@@ -20,7 +20,6 @@ nav {
 		background-image: url('https://static.showit.co/800/gIyMRX_8QdGp9lHhZ2wHgA/63707/2c5a2462.jpg');
 		background-size: cover;
 		background-position: center;
-		filter: grayscale(80%);
 		.shadow {
 			position: absolute;
 			top: 0;
@@ -37,16 +36,19 @@ nav {
 			transform: translateY(-50%);
 			color: rgba(255, 255, 255, 1);
 			z-index: 10;
+			h1 {
+				padding-bottom: 12px;
+			}
 			h1,
 			.crimson {
-				font-family: 'Crimson Pro', serif;
+				font-family: 'Crimson Pro';
 				color: rgb(255, 255, 255);
 				font-weight: 200;
 				letter-spacing: 2px;
 			}
 			p {
 				padding: 0 40px;
-				font-family: 'Quicksand', sans-serif;
+				font-family: 'Quicksand';
 				font-size: 12px;
 				line-height: 25px;
 			}
@@ -71,7 +73,7 @@ nav {
 			right: 11%;
 			-webkit-transform: rotate(351deg);
 			transform: rotate(351deg);
-			font-family: 'Dawning of a New Day', cursive;
+			font-family: 'Dawning of a New Day';
 			color: rgba(255, 255, 255, 0.6);
 			font-size: 25px;
 			line-height: 0.5;
@@ -80,11 +82,12 @@ nav {
 	.menu-top-left {
 		position: fixed;
 		z-index: 1;
-		top: 0;
-		left: 1.5%;
+		top: 0%;
+		left: 0.5%;
 		background-color: white;
 		width: 68px;
 		height: 70px;
+		cursor: pointer;
 		.upper-menu {
 			height: 100%;
 			width: 100%;
@@ -103,7 +106,7 @@ nav {
 				left: 50%;
 				transform: translateX(-50%);
 				bottom: 0;
-				font-family: 'Allura', cursive;
+				font-family: 'Allura';
 			}
 		}
 		.bottom-menu {
@@ -136,10 +139,10 @@ nav {
 // MAIN
 main {
 	width: 100vw;
-	height: 120vh;
+	height: 220vh;
 	background-color: rgb(241, 229, 213);
 	.founder {
-		height: 90%;
+		height: 55%;
 		position: relative;
 		.card {
 			width: 90%;
@@ -152,6 +155,7 @@ main {
 				height: 90%;
 				border: 1px solid black;
 				margin: 0 auto;
+				position: relative;
 				.image {
 					width: 100%;
 					img {
@@ -188,22 +192,63 @@ main {
 					padding: 0 21px;
 					.title {
 						h2 {
-							font-family: 'Allura', cursive;
-                            font-size: 30px;
+							font-family: 'Allura';
+							font-size: 30px;
 						}
 						.name {
-							font-family: 'Crimson Pro', serif;
-                            font-size: 18px;
-                            text-transform: uppercase;
+							font-family: 'Crimson Pro';
+							font-size: 18px;
+							text-transform: uppercase;
 						}
 						p {
-							font-family: 'Quicksand', sans-serif;
-                            font-style: normal;
-                            font-weight: 400;
-                            color: rgba(57,51,46,1);
-                            line-height: 1.5;
+							font-family: 'Quicksand';
+							font-style: normal;
+							font-weight: 400;
+							color: rgba(57, 51, 46, 1);
+							line-height: 26px;
+							font-size: 14px;
 						}
 					}
+				}
+			}
+		}
+	}
+	.title-suit {
+		background-color: rgb(53, 40, 40);
+		height: 10%;
+		padding-top: 3%;
+		.text-suit {
+			border-bottom: 1px solid white;
+			border-top: 1px solid white;
+			width: 100%;
+			margin: auto;
+			height: 90%;
+			text-align: center;
+			padding: 25px 0;
+			color: white;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			p {
+				font-family: 'Quicksand';
+				font-size: 15px;
+			}
+			h3 {
+				font-family: 'Crimson Pro';
+				font-size: 30px;
+				font-weight: lighter;
+			}
+		}
+	}
+	.images {
+		.media-molly {
+			background-color: red;
+			width: 75%;
+			height: 30%;
+			margin: 0 auto;
+			.img {
+				width: 90%;
+				img {
+					width: 100%;
 				}
 			}
 		}
